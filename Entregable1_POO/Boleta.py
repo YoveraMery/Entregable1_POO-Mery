@@ -9,19 +9,6 @@ class Boleta(Trabajador): #Declaramos una nueva clase y heredamos.
         
     
     #Métodos 
-    def basic_salary(self):  #Está función, es para asignar el valor a cada categoría
-        if self.category == 'A':
-            self.bs = 3000
-        
-        elif self.category == 'B':
-            self.bs = 2500
-            
-        else:
-            self.bs = 2000
-
-        return self.bs # retornar resultado a la función
-
-
     def calculate_ph(self): # ->Para calcular el Pago por hora
         if self.category == 'A' or self.category == 'B' or  self.category == 'C':
             self.ph = round(self.bs / 240 , 2)
